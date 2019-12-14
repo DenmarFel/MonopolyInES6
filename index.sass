@@ -1,4 +1,13 @@
 
+$brown: #640303;
+$light-blue: #AAE0FA;
+$purple: #b02f7c;
+$orange: #fa811d;
+$red: #f50c2b;
+$yellow: #ffed20;
+$green: #41994e;
+$blue: #5a6dba;
+    
 body 
     margin: 0px
     padding: 0px
@@ -6,38 +15,91 @@ body
     grid-template-columns: auto 900px 20vw auto
     grid-template-rows: auto 900px
     background-color: blue
+    font-family: "Verdana", Sans-serif
 
-    
-
-.board 
+#board 
     grid-column-start: 2
     grid-row-start: 2
-    background-color: green
+    background-color: #CBE9E1
     /* 3 grid */
     display: grid
     grid-template-columns: 14% 72% 14%
     grid-template-rows: 14% 72% 14%
 
-    .space
-        border: 1px black solid 
-        text-align: center
-    
-    .rowMidSpaces
+    .row 
         display: grid
-        grid-template-columns: repeat(9, 11.1111%)
-        
-    .colMidSpaces
-        display: grid
+
+    .vertical-row
+        grid-row: 2
         grid-template-rows: repeat(9, 11.1111%)
-        
+
+    .left-row
+        grid-column: 1
+
+        .container
+            transform: translate(37%, -21.5%) rotate(90deg)
             
-    #top
-    
+    .right-row
+        grid-column: 3
 
-    #bottom
+        .container
+            transform: translate(37%, -21.5%) rotate(270deg)
     
+    .horizontal-row
+        grid-column: 2
+        grid-template-columns: repeat(9, 11.1111%)
 
-    
+    .top-row
+        grid-row: 1
+
+        .container
+            transform: rotate(180deg)
+
+    .bottom-row
+        grid-row: 3
+
+    .space
+        border: 1.2px black solid
+        padding: 1px
+        font-size: 0.55em
+        text-align: center
+        
+        .container 
+            width: 72px
+            height: 123px 
+
+            .color-bar
+                width: 70px
+                height: 25px
+                border-bottom: 2.4px black solid
+                
+            
+            .brown
+                background-color: $brown
+                transform: translate(-2%, -5%)
+            .light-blue
+                background-color: $light-blue
+                transform: translate(-2%, -5%)
+            .purple
+                background-color: $purple
+            .orange
+                background-color: $orange
+            .red
+                background-color: $red
+                transform: translate(4.5%, -4%)
+            .yellow
+                background-color: $yellow
+                transform: translate(4.5%, -4%)
+            .green
+                background-color: $green
+                transform: translate(3%, -8%)
+
+            .blue
+                background-color: $blue
+                transform: translate(3%, -8%)
+
+                
+
             
 .info 
     grid-column-start: 3
