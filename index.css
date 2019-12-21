@@ -45,8 +45,8 @@ body {
 .row {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[9];
-      grid-template-columns: repeat(9, auto);
+  -ms-grid-columns: (11.1111%)[9];
+      grid-template-columns: repeat(9, 11.1111%);
 }
 
 #top {
@@ -64,8 +64,8 @@ body {
 .column {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (auto)[9];
-      grid-template-rows: repeat(9, auto);
+  -ms-grid-rows: (11.1111%)[9];
+      grid-template-rows: repeat(9, 11.1111%);
 }
 
 #left {
@@ -78,5 +78,9 @@ body {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: 2 / 3 / 2 / 3;
+}
+
+.space {
+  border: 1px solid black;
 }
 /*# sourceMappingURL=index.css.map */
