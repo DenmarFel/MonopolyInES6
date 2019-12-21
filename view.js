@@ -1,5 +1,4 @@
-function rotate(){
-    
+export function rotate(){
     if (document.getElementById("board").style.transform == "") {
         document.getElementById("board").style.transform = "rotate(90deg)";
     } else if (document.getElementById("board").style.transform == "rotate(90deg)") {
@@ -10,5 +9,3 @@ function rotate(){
         document.getElementById("board").style.transform = "";
     }
 };
-
-document.getElementById("rotate").addEventListener("click", rotate);

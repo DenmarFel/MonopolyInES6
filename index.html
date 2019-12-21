@@ -11,7 +11,70 @@
 
 <body>
     <div id="board">
+        <div id="left" class="column">
+            
+            <div id="pos19" class="space">
+                <div class="space-name">New York Avenue</div>
+            </div>
+            <div id="pos18" class="space">
+                <div class="space-name">Tennesse Avenue</div>
+            </div>
+            <div id="pos17" class="space">
+                <div class="space-name">Community Chest</div>
+            </div>
+            <div id="pos16" class="space">
+                <div class="space-name">St. James Place</div>
+            </div>
+            <div id="pos15" class="space">Pennysylvania Railroad</div>
+            <div id="pos14" class="space">Virginia Avenue</div>
+            <div id="pos13" class="space">States Avenue</div>
+            <div id="pos12" class="space">Electric Company</div>
+            <div id="pos11" class="space">St. Charles Place</div>
+        </div>
 
+        <div id="right" class="column">
+            <div id="pos31">Pacific Avenue</div>
+            <div id="pos32">North Carolina Avenue</div>
+            <div id="pos33">Community Chest</div>
+            <div id="pos34">Pennysylvania Avenue</div>
+            <div id="pos35">Short Line</div>
+            <div id="pos36">Chance</div>
+            <div id="pos37">Park Place</div>
+            <div id="pos38">Luxury Tax</div>
+            <div id="pos39">Boardwalk</div>
+        </div>
+
+        <div id="top" class="row">
+            <div id="pos29">Marvin Gardens</div>
+            <div id="pos28">Water Works</div>
+            <div id="pos27">Ventor Avenue</div>
+            <div id="pos26">Atlantic Avenue</div>
+            <div id="pos25">B & O Railroad</div>
+            <div id="pos24">Illinois Avenue</div>
+            <div id="pos23">Indiana Avenue</div>
+            <div id="pos22">Chance</div>
+            <div id="pos21">Kentucky Avenue</div>
+        </div>
+
+        <div id="bottom" class="row">
+            <div id="pos9">Connecticut Avenue</div>
+            <div id="pos8">Vermont Avenue</div>
+            <div id="pos7">Chance</div>
+            <div id="pos6">Oriental Avenue</div>
+            <div id="pos5">Reading Railroad</div>
+            <div id="pos4">Income Tax</div>
+            <div id="pos3">Baltic Avenue</div>
+            <div id="pos2">Community Chest</div>
+            <div id="pos1">Mediterranean Avenue</div>
+        </div>
+        <div id="pos20">Free Parking</div>
+        <div id="pos30">Go to Jail</div>
+        <div id="pos10">Jail</div>
+        <div id="pos0">Go</div>
+
+    </div>
+<!-- 
+         
         <div class="row vertical-row left-row">
             <div class="space">
                 <div class="container">
@@ -74,6 +137,7 @@
             </div>
         </div>
 
+        
         <div id="bottom" class="row horizontal-row bottom-row">
             <div class="space">
                 <div class="container">
@@ -124,11 +188,12 @@
                     <div class="space-name">Community Chest</div>
                 </div>
             </div>
-            <div class="space">
+            <div id="space0" class="space">
                 <div class="container">
                     <div class="color-bar brown"></div>
                     <div class="space-name">Mediterranean Avenue</div>
                     <div class="space-price">$50</div>
+                    
                 </div>
             </div>
         </div>
@@ -254,22 +319,25 @@
             </div>
         </div>
 
-        <div id="freeParking" class="space">Free Parking</div>
+        <div id="space20" class="space">Free Parking</div>
 
-        <div id="goToJail" class="space">Go To Jail</div>
+        <div id="space30" class="space">Go To Jail</div>
 
-        <div id="centerBoard" class="space">Center Board</div>
+        <div id="centerBoard">Center Board</div>
 
-        <div id="jail" class="space">Jail</div>
+        <div id="space10" class="space">Jail</div>
 
-        <div id="go" class="space">Go</div>
+        <div id="space0" class="space">Go</div>
         
     </div>
 
     <div class="info">
         <button id="rotate">Rotate</button>
-    </div>
+        <button id="roll_dice">Roll Dice</button>
+        <button id="end_turn">End Turn</button>
+        <div id="game-log"></div>
+    </div> -->
 
-    <script src="index.js"></script>
+    <script src="controller.js" type="module"></script>
 </body>
 </html>
