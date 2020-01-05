@@ -105,7 +105,25 @@ body {
 
 .space .color-bar {
   width: 100%;
-  height: 10%;
+  height: 15%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+}
+
+.space .color-bar .house {
+  width: 80%;
+  height: 80%;
+  background-color: green;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.space .color-bar .hotel {
+  width: 100%;
+  height: 80%;
+  background-color: red;
 }
 
 .space #brown {
@@ -170,6 +188,12 @@ body {
   background: #1B998B;
 }
 
+.space #player6 {
+  width: 10%;
+  height: 10%;
+  background: #4E4D4D;
+}
+
 #stats {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -180,41 +204,52 @@ body {
       grid-template-rows: auto auto 33vh;
 }
 
+#player-info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: 1 / 1 / 1 / 1;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 70%;
+      grid-template-columns: 30% 70%;
+}
+
 #players-tab {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: 1 / 1 / 1 / 1;
-  background-color: #CBE9E1;
+}
+
+#players-tab .playerstats {
+  height: calc(100%/6);
+  color: white;
+  font-family: "Verdana", Sans-serif;
+  font-size: 1.5em;
+  text-align: center;
 }
 
 #players-tab #player1stats {
-  width: 30%;
-  height: 10%;
   background-color: #2C87AA;
 }
 
 #players-tab #player2stats {
-  width: 30%;
-  height: 10%;
   background-color: #CD5334;
 }
 
 #players-tab #player3stats {
-  width: 30%;
-  height: 10%;
   background-color: #674fd6;
 }
 
 #players-tab #player4stats {
-  width: 30%;
-  height: 10%;
   background-color: #BC71B2;
 }
 
 #players-tab #player5stats {
-  width: 30%;
-  height: 10%;
   background-color: #1B998B;
+}
+
+#players-tab #player6stats {
+  background-color: #4E4D4D;
 }
 
 #gamelog {

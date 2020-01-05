@@ -11,7 +11,14 @@ export default class Property extends Space {
     display() {
         if (this.owner != undefined) {
             let space = document.getElementById(this.html_id);
-            space.style.borderTop = "5px solid " + this.owner.color
-        }
+            space.style.borderTop = "5px solid " + this.owner.color;
+        };
+    }
+
+    isOwned() {
+        if (this.owner != undefined) {
+            return true;
+        };
+        return false;
     }
 }
